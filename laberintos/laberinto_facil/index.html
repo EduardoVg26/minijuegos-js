@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laberinto</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDWrZn__i1nsNSOPHgHdu3Z-c8h59XCMgA",
+            authDomain: "expertt-73cdc.firebaseapp.com",
+            databaseURL: "https://expertt-73cdc.firebaseio.com",
+            projectId: "expertt-73cdc",
+            storageBucket: "expertt-73cdc.appspot.com",
+            messagingSenderId: "424876319857"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+
+  <body>
+    <div id="quiz">
+      <div id="game">
+        <div id="botones">
+          <div id="btnNew">
+            <button id="btnNuevo">Nuevo Juego</button>
+          </div>
+        </div>
+        <div id="maze-game"></div>
+      </div>
+      <div id="btnPlayer">
+        <h2 id="control">Controles</h2>
+        <div>
+          <button id="btnUp"><i class="fas fa-arrow-circle-up"></i></button>
+          <div>
+            <button id="btnLeft">
+              <i class="fas fa-arrow-circle-left"></i>
+            </button>
+            <button id="btnRight">
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+          <button id="btnDown">
+            <i class="fas fa-arrow-circle-down"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

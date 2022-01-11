@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #2c3e50;
+
+  font-family: "IBM Plex Serif", serif;
+}
+
+.contenedor {
+  background-color: white;
+  min-height: calc(10vh - 20px);
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px 30px 0 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  padding: 90px;
+  background-color: rgb(62, 101, 231);
+}
+
+.flex {
+  margin: 0 auto;
+  padding: 2em;
+  display: flex;
+  align-content: space-around;
+}
+
+#controles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 50px;
+}
+
+#play {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 75px;
+  height: auto;
+}
+#seleccion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+  height: 50;
+}
+.animal {
+  justify-self: center;
+  cursor: pointer;
+}
+
+#seleccion img {
+  width: 150px;
+  height: 150px;
+}

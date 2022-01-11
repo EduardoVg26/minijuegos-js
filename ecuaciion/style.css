@@ -1,0 +1,40 @@
+body {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+input[type="text"] {
+  width: 300px;
+}
+input {
+  padding: 6px;
+}
+
+body,
+html,
+input {
+  font-family: sans-serif;
+  font-size: 11pt;
+  text-align: center;
+}
+form {
+  margin: 20px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.grafica {
+  background-color: white;
+}
+
+#canvas {
+  background-color: white;
+}

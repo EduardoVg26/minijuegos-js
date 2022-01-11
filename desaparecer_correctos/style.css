@@ -1,0 +1,159 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #2c3e50;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font: 16px "Source Sans Pro", sans-serif;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  display: table;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#quiz {
+  margin: -44px 50px 0px;
+  position: relative;
+  width: calc(100% - 100px);
+}
+
+#quiz h1 {
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 44px;
+}
+
+#quiz button {
+  float: right;
+  margin: 8px 0px 0px 8px;
+  padding: 4px 8px;
+  background: #9acfcc;
+  color: #00403c;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+#quiz button:hover {
+  background: #36a39c;
+  color: #fff;
+}
+
+#quiz button:disabled {
+  opacity: 0.5;
+  background: #9acfcc;
+  color: #00403c;
+  cursor: default;
+}
+
+#question {
+  padding: 20px;
+  background: #fafafa;
+}
+
+#pistola {
+  display: flex;
+  align-items: center;
+  margin: 0 15%;
+}
+
+#pistola img {
+  width: 220px;
+  height: 150px;
+}
+
+#choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#question h2 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#h2 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#question input[type="radio"] {
+  display: none;
+}
+
+#question label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin: 4px;
+  padding: 8px;
+  background: #fae3bb;
+  color: #4c3000;
+  min-width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#question label:hover {
+  background: #ebbb67;
+}
+
+#question input[type="radio"]:checked + label {
+  background: #cb8306;
+  color: #fafafa;
+}
+
+#quiz-results {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 44px;
+  left: 0px;
+  background: #fafafa;
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+#quiz-results-message {
+  display: block;
+  color: #00403c;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quiz-results-score {
+  display: block;
+  color: #31706c;
+  font-size: 20px;
+}
+
+#quiz-results-score b {
+  color: #00403c;
+  font-weight: 600;
+  font-size: 20px;
+}

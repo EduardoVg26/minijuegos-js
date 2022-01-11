@@ -1,0 +1,77 @@
+body {
+    background-color: #070703;
+}
+
+#fondo-header {
+    position: absolute;
+    width: 100%;
+    height: 950px;
+}
+
+.elementos-header {
+    position: relative  ;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text {
+    margin-top: 13rem;
+    margin-bottom: 10rem;
+    color: #fff;
+}
+
+.titulo {
+    font-size: 8rem;
+}
+
+.subtitulo {
+    font-size: 60px;
+}
+
+.text {
+    font-size: 24px;
+}
+
+.joystick  {
+    margin-top: 10rem   ;
+    width: 70%;
+    height: auto;
+    transform: rotate(45deg)
+}
+
+.joystick-class {
+    padding: 0 30px;
+
+}
+
+.repo {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.git {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.git:hover {
+    color: #000;
+}
+
+.contenido {
+    margin-top: 25%;
+    margin-bottom: 30%;
+}
+
+.cards-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    padding-top: 10px;
+}

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #2c3e50;
+  font-family: "IBM Plex Serif", serif;
+}
+
+.contenedor {
+  background-color: white;
+  min-height: calc(10vh - 20px);
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#draggable {
+  width: 30px;
+  height: 30px;
+  padding: 0.5em;
+  float: left;
+  margin: 90px 10px 10px 0;
+  cursor: pointer;
+}
+
+#draggable p {
+  margin: 0;
+}
+
+#opciones {
+  display: flex;
+  flex-direction: column;
+}
+#droppable {
+  text-align: end;
+  width: auto;
+  height: 50px;
+  padding: 0.5em;
+  float: left;
+  margin: 10px;
+}
